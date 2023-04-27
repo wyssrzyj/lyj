@@ -24,6 +24,7 @@ import Setting from "@iconify-icons/ri/settings-3-line";
 import Dept from "@iconify-icons/ri/git-branch-line";
 import Lollipop from "@iconify-icons/ep/lollipop";
 import Monitor from "@iconify-icons/ep/monitor";
+
 addIcon("ubuntuFill", UbuntuFill);
 addIcon("menu", Menu);
 addIcon("edit", Edit);

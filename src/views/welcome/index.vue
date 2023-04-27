@@ -67,18 +67,12 @@ axios
       >
         <el-card shadow="never" style="height: 347px">
           <template #header>
-            <a
-              :class="titleClass"
-              href="https://github.com/pure-admin/vue-pure-admin/releases"
-              target="_black"
-            >
               <TypeIt
                 :className="'type-it2'"
-                :values="['PureAdmin 版本日志']"
+                :values="['版本日志']"
                 :cursor="false"
                 :speed="80"
               />
-            </a>
           </template>
           <el-skeleton animated :rows="7" :loading="loading">
             <template #default>
@@ -122,18 +116,12 @@ axios
       >
         <el-card shadow="never" style="height: 347px">
           <template #header>
-            <a
-              :class="titleClass"
-              href="https://github.com/xiaoxian521"
-              target="_black"
-            >
-              <TypeIt
+               <TypeIt
                 :className="'type-it1'"
-                :values="['GitHub信息']"
+                :values="['小卢的世界']"
                 :cursor="false"
                 :speed="120"
               />
-            </a>
           </template>
           <el-skeleton animated :rows="7" :loading="loading">
             <template #default>

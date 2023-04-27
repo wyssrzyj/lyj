@@ -25,7 +25,7 @@ import { $t, transformI18n } from "@/plugins/i18n";
 import { operates, thirdParty } from "./utils/enums";
 import { useLayout } from "@/layout/hooks/useLayout";
 import { useUserStoreHook } from "@/store/modules/user";
-import { bg, avatar, illustration } from "./utils/static";
+import { bg,  illustration } from "./utils/static";
 import { ReImageVerify } from "@/components/ReImageVerify";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
 import { useTranslationLang } from "@/layout/hooks/useTranslationLang";
@@ -159,7 +159,7 @@ watch(imgCode, value => {
       </div>
       <div class="login-box">
         <div class="login-form">
-          <avatar class="avatar" />
+          <!-- <avatar class="avatar" /> -->
           <Motion>
             <h2 class="outline-none">
               <TypeIt :values="[title]" :cursor="false" :speed="150" />

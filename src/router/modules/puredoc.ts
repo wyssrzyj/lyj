@@ -1,6 +1,6 @@
 import { doc } from "@/router/enums";
 import hot from "@/assets/svg/hot.svg?component";
-const IFrame = () => import("@/layout/frameView.vue");
+// const IFrame = () => import("@/layout/frameView.vue");
 
 export default {
   path: "/pure-admin-doc",
@@ -11,14 +11,14 @@ export default {
     rank: doc
   },
   children: [
-    {
-      path: "/pure-admin-doc/index",
-      name: "FrameDoc",
-      component: IFrame,
-      meta: {
-        title: "pure-admin-doc",
-        frameSrc: "https://yiming_chang.gitee.io/pure-admin-doc/"
-      }
-    }
+    // {
+    //   path: "/pure-admin-doc/index",
+    //   name: "FrameDoc",
+    //   component: IFrame,
+    //   meta: {
+    //     title: "pure-admin-doc",
+    //     frameSrc: "https://yiming_chang.gitee.io/pure-admin-doc/"
+    //   }
+    // }
   ]
 } as RouteConfigsTable;

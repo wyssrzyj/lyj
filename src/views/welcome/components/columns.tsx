@@ -18,6 +18,7 @@ export function useColumns() {
   const columnsA = [
     {
       labelRenderer: () => (
+
         <div class="flex items-center">
           <el-icon>
             <iconify-icon-offline icon={User} />
@@ -25,7 +26,7 @@ export function useColumns() {
           用户名
         </div>
       ),
-      value: "乐于分享的程序员小铭"
+      value: "非常喜欢猫咪的小卢~"
     },
     {
       labelRenderer: () => (
@@ -36,7 +37,7 @@ export function useColumns() {
           手机号
         </div>
       ),
-      value: "123456789"
+      value: "1008611"
     },
     {
       labelRenderer: () => (
@@ -80,7 +81,7 @@ export function useColumns() {
           联系地址
         </div>
       ),
-      value: "中华人民共和国"
+      value: "m78星云"
     }
   ];
 
@@ -97,7 +98,7 @@ export function useColumns() {
       cellRenderer: () => (
         <TypeIt
           className={"github"}
-          values={["办法总比困难多"]}
+          values={["喵喵喵"]}
           cursor={false}
           speed={100}
         />
