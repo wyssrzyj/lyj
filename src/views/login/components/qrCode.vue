@@ -9,11 +9,6 @@ const { t } = useI18n();
 
 <template>
   <Motion class="-mt-2 -mb-2"> <ReQrcode :text="t('login.test')" /> </Motion>
-  <Motion :delay="100">
-    <el-divider>
-      <p class="text-gray-500 text-xs">{{ t("login.tip") }}</p>
-    </el-divider>
-  </Motion>
   <Motion :delay="150">
     <el-button
       class="w-full mt-4"

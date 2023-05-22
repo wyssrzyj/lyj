@@ -4,9 +4,10 @@ import axios from "axios";
 import MdEditor from "md-editor-v3";
 import Bar from "./components/Bar.vue";
 import Pie from "./components/Pie.vue";
-import Line from "./components/Line.vue";
+import custom from "./components/custom.vue";
 import TypeIt from "@/components/ReTypeit";
 import { ref, computed, markRaw } from "vue";
+
 import Github from "./components/Github.vue";
 import { randomColor } from "@pureadmin/utils";
 import { useRenderFlicker } from "@/components/ReFlicker";
@@ -44,6 +45,7 @@ axios
 
 <template>
   <div>
+    <!-- <Motion> -->
     <el-row :gutter="24">
       <el-col
         :xs="24"
@@ -67,12 +69,12 @@ axios
       >
         <el-card shadow="never" style="height: 347px">
           <template #header>
-              <TypeIt
-                :className="'type-it2'"
-                :values="['版本日志']"
-                :cursor="false"
-                :speed="80"
-              />
+            <TypeIt
+              :className="'type-it2'"
+              :values="['版本日志']"
+              :cursor="false"
+              :speed="80"
+            />
           </template>
           <el-skeleton animated :rows="7" :loading="loading">
             <template #default>
@@ -116,12 +118,12 @@ axios
       >
         <el-card shadow="never" style="height: 347px">
           <template #header>
-               <TypeIt
-                :className="'type-it1'"
-                :values="['小卢的世界']"
-                :cursor="false"
-                :speed="120"
-              />
+            <TypeIt
+              :className="'type-it1'"
+              :values="['小卢的世界']"
+              :cursor="false"
+              :speed="120"
+            />
           </template>
           <el-skeleton animated :rows="7" :loading="loading">
             <template #default>
@@ -153,22 +155,16 @@ axios
       >
         <el-card shadow="never">
           <template #header>
-            <a
-              :class="titleClass"
-              href="https://github.com/pure-admin/vue-pure-admin"
-              target="_black"
-            >
-              <TypeIt
-                :className="'type-it4'"
-                :values="['GitHub折线图信息']"
-                :cursor="false"
-                :speed="120"
-              />
-            </a>
+            <TypeIt
+              :className="'type-it4'"
+              :values="['GitHub折线图信息']"
+              :cursor="false"
+              :speed="120"
+            />
           </template>
           <el-skeleton animated :rows="7" :loading="loading">
             <template #default>
-              <Line />
+              <custom />
             </template>
           </el-skeleton>
         </el-card>
@@ -260,6 +256,7 @@ axios
         </el-card>
       </el-col>
     </el-row>
+    <!-- </Motion> -->
   </div>
 </template>
 

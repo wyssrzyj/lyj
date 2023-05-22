@@ -19,8 +19,11 @@ const { title } = useNav();
         to="/"
       >
         <img src="/logo.svg" alt="logo" />
+        <span class="sidebar-title">666</span>
+
         <span class="sidebar-title">{{ title }}</span>
       </router-link>
+
       <router-link
         v-else
         key="expand"
@@ -28,7 +31,7 @@ const { title } = useNav();
         class="sidebar-logo-link"
         to="/"
       >
-        <img src="/logo.svg" alt="logo" />
+        <img class="logoImg" src="./xml.jpg" alt="logo" />
         <span class="sidebar-title">{{ title }}</span>
       </router-link>
     </transition>
@@ -66,5 +69,8 @@ const { title } = useNav();
       font-weight: 600;
     }
   }
+}
+.logoImg {
+  border-radius: 5px;
 }
 </style>
