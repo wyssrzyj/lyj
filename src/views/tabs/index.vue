@@ -143,6 +143,9 @@ function onCloseTags() {
     </el-link>
 
     <el-divider />
+    <el-button @click="$router.push({ name: 'cloth' })"> 看板1 </el-button>
+    <el-button @click="$router.push({ name: 'cutting' })"> 看板2 </el-button>
+    <el-button @click="$router.push({ name: 'device' })"> 看板2 </el-button>
     <el-button @click="$router.push({ name: 'Empty' })">
       跳转无Layout的空白页面
     </el-button>

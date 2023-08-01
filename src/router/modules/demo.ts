@@ -1,9 +1,9 @@
 /*
  * @Author: lyj
  * @Date: 2023-04-26 16:37:00
- * @LastEditTime: 2023-05-15 13:09:07
+ * @LastEditTime: 2023-08-01 14:53:45
  * @Description:
- * @LastEditors: lyj-电脑测试 lyj1974451304@163.com
+ * @LastEditors: lyj
  */
 import { $t } from "@/plugins/i18n";
 import { error } from "@/router/enums";
@@ -18,6 +18,22 @@ export default {
     rank: error
   },
   children: [
+    {
+      path: "/demo/interesting/index",
+      name: "interesting",
+      component: () => import("@/views/demo/interesting/index.vue"),
+      meta: {
+        title: "奇思妙想"
+      }
+    },
+    {
+      path: "/demo/wheel/index",
+      name: "wheel",
+      component: () => import("@/views/demo/wheel/index.vue"),
+      meta: {
+        title: "天气轮盘"
+      }
+    },
     {
       path: "/demo/mouseEffects/index",
       name: "mouseEffects",
@@ -34,33 +50,33 @@ export default {
         title: "图表"
       }
     },
-    {
-      path: "/demo/bulletinBoard/cutting1.0/index",
-      name: "cutting1",
-      component: () =>
-        import("@/views/demo/bulletinBoard/cutting1.0/index.vue"),
-      meta: {
-        title: "看板1"
-      }
-    },
-    {
-      path: "/demo/bulletinBoard/cutting2.0/index",
-      name: "cutting2",
-      component: () =>
-        import("@/views/demo/bulletinBoard/cutting2.0/index.vue"),
-      meta: {
-        title: "看板2"
-      }
-    },
-    {
-      path: "/demo/bulletinBoard/cutting3.0/index",
-      name: "cutting3",
-      component: () =>
-        import("@/views/demo/bulletinBoard/cutting3.0/index.vue"),
-      meta: {
-        title: "看板3"
-      }
-    },
+    // {
+    //   path: "/demo/bulletinBoard/cutting1.0/index",
+    //   name: "cutting1",
+    //   component: () =>
+    //     import("@/views/demo/bulletinBoard/cutting1.0/index.vue"),
+    //   meta: {
+    //     title: "看板1"
+    //   }
+    // },
+    // {
+    //   path: "/demo/bulletinBoard/cutting2.0/index",
+    //   name: "cutting2",
+    //   component: () =>
+    //     import("@/views/demo/bulletinBoard/cutting2.0/index.vue"),
+    //   meta: {
+    //     title: "看板2"
+    //   }
+    // },
+    // {
+    //   path: "/demo/bulletinBoard/cutting3.3/index",
+    //   name: "cutting3",
+    //   component: () =>
+    //     import("@/views/demo/bulletinBoard/cutting3.3/index.vue"),
+    //   meta: {
+    //     title: "看板3"
+    //   }
+    // },
     {
       path: "/demo/drag/index",
       name: "drag",

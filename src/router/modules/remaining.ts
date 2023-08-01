@@ -1,3 +1,10 @@
+/*
+ * @Author: lyj
+ * @Date: 2023-05-06 16:54:29
+ * @LastEditTime: 2023-07-12 20:11:16
+ * @Description:
+ * @LastEditors: lyj
+ */
 import { $t } from "@/plugins/i18n";
 const Layout = () => import("@/layout/index.vue");
 
@@ -36,6 +43,36 @@ export default [
     component: () => import("@/views/empty/index.vue"),
     meta: {
       title: $t("menus.hsempty"),
+      showLink: false,
+      rank: 103
+    }
+  },
+  {
+    path: "/demo/bulletinBoard/cloth/index",
+    name: "cloth",
+    component: () => import("@/views/demo/bulletinBoard/cloth/index.vue"),
+    meta: {
+      title: "看板1",
+      showLink: false,
+      rank: 103
+    }
+  },
+  {
+    path: "/demo/bulletinBoard/cutting/index",
+    name: "cutting",
+    component: () => import("@/views/demo/bulletinBoard/cutting/index.vue"),
+    meta: {
+      title: "看板2",
+      showLink: false,
+      rank: 103
+    }
+  },
+  {
+    path: "/demo/bulletinBoard/device/index",
+    name: "device",
+    component: () => import("@/views/demo/bulletinBoard/device/index.vue"),
+    meta: {
+      title: "看板3",
       showLink: false,
       rank: 103
     }

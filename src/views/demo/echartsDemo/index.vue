@@ -1,13 +1,13 @@
 <!--
  * @Author: lyj
  * @Date: 2023-04-26 16:48:01
- * @LastEditTime: 2023-04-26 17:26:42
+ * @LastEditTime: 2023-08-01 20:32:03
  * @Description: 
  * @LastEditors: lyj
 -->
 <template>
   <div>
-    <el-card shadow="always"  style="height: 87vh">
+    <el-card shadow="always" style="height: 87vh">
       <template #header>
         <TypeIt
           :className="'type-it2'"
@@ -22,7 +22,6 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from "vue";
 import TypeIt from "@/components/ReTypeit";
 import broken from "./modules/broken.vue";
 </script>

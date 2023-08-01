@@ -562,7 +562,7 @@ onMounted(() => {
       <IconifyIconOffline :icon="ArrowRightSLine" @click="handleScroll(-200)" />
     </span>
     <!-- 右键菜单按钮 -->
-    <transition name="el-zoom-in-top">
+    <!-- <transition name="el-zoom-in-top">
       <ul
         v-show="visible"
         :key="Math.random()"
@@ -580,9 +580,9 @@ onMounted(() => {
           </li>
         </div>
       </ul>
-    </transition>
+    </transition> -->
     <!-- 右侧功能按钮 -->
-    <el-dropdown
+    <!-- <el-dropdown
       trigger="click"
       placement="bottom-end"
       @command="handleCommand"
@@ -604,7 +604,7 @@ onMounted(() => {
           </el-dropdown-item>
         </el-dropdown-menu>
       </template>
-    </el-dropdown>
+    </el-dropdown> -->
   </div>
 </template>
 
