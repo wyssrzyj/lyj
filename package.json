@@ -60,6 +60,7 @@
     "mockjs": "^1.1.0",
     "moment": "^2.29.4",
     "nprogress": "^0.2.0",
+    "particles.vue3": "^2.11.1",
     "path": "^0.12.7",
     "pinia": "^2.0.34",
     "qrcode": "^1.5.1",

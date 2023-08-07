@@ -1,7 +1,7 @@
 <!--
  * @Author: lyj
  * @Date: 2022-08-31 13:11:11
- * @LastEditTime: 2023-05-11 13:00:04
+ * @LastEditTime: 2023-08-02 14:10:55
  * @Description: 
  * @LastEditors: lyj
 -->
@@ -25,7 +25,7 @@ const state: any = reactive({
 const configuration = () => {
   const labelData: any = [];
   const labelData1: any = [];
-  for (var i = 0; i < 100; ++i) {
+  for (let i = 0; i < 100; ++i) {
     labelData.push({
       value: 1,
       name: i,
@@ -36,7 +36,7 @@ const configuration = () => {
       }
     });
   }
-  for (var i = 0; i < labelData.length; ++i) {
+  for (let i: any = 0; i < labelData.length; ++i) {
     //内层
     if (labelData[i].name < state.value) {
       labelData[i].itemStyle = {
@@ -55,7 +55,7 @@ const configuration = () => {
       };
     }
   }
-  for (var i = 0; i < 100; ++i) {
+  for (let i = 0; i < 100; ++i) {
     labelData1.push({
       value: 1,
       name: i,
@@ -66,7 +66,7 @@ const configuration = () => {
       }
     });
   }
-  for (var i = 0; i < labelData1.length; ++i) {
+  for (let i = 0; i < labelData1.length; ++i) {
     if (labelData1[i].name < 100) {
       labelData1[i].itemStyle = {
         normal: {

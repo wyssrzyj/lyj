@@ -1,0 +1,109 @@
+<!--
+ * @Author: lyj
+ * @Date: 2023-08-02 13:41:05
+ * @LastEditTime: 2023-08-04 10:04:23
+ * @Description: 
+ * @LastEditors: lyj
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D0D0D;
+  margin: 10%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200vh;
+}
+
+.text {
+  font-size: 9vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: rgb(182, 182, 182, 0.2);
+
+  background: linear-gradient(to right, #b61414, #2d12b0) no-repeat;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
+
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1fbe27;
+  color: #0D0D0D;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}</style>
+<body><div class="container">
+  <h1 class="text">最长的猫猫是？<span>小梅露</span></h1>
+  <h1 class="text">最淘气的猫猫是？<span>小糖糖</span></h1>
+  <h1 class="text">最老实的猫猫是？<span>小黑子</span></h1>
+  <h1 class="text">最稳重的猫猫是?<span>大眼</span></h1>
+</div></body>
+<script  type="module">
+import { gsap } from "https://cdn.skypack.dev/gsap";
+import { ScrollTrigger } from "https://cdn.skypack.dev/gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+const textElements = gsap.utils.toArray('.text');
+
+textElements.forEach(text => {
+  gsap.to(text, {
+    backgroundSize: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: text,
+      start: 'center 80%',
+      end: 'center 20%',
+      scrub: true,
+    },
+  });
+});
+</script>
+</html>

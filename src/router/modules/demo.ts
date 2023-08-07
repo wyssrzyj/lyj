@@ -1,7 +1,7 @@
 /*
  * @Author: lyj
  * @Date: 2023-04-26 16:37:00
- * @LastEditTime: 2023-08-01 14:53:45
+ * @LastEditTime: 2023-08-02 16:42:10
  * @Description:
  * @LastEditors: lyj
  */
@@ -12,9 +12,9 @@ export default {
   path: "/demo",
   redirect: "/demo/index",
   meta: {
-    icon: "informationLine",
+    icon: "",
     // showLink: false,
-    title: "demo例子",
+    title: "Σ(っ °Д °;)っ",
     rank: error
   },
   children: [
@@ -23,15 +23,23 @@ export default {
       name: "interesting",
       component: () => import("@/views/demo/interesting/index.vue"),
       meta: {
-        title: "奇思妙想"
+        title: "🛬🛸🐳🐌"
       }
     },
     {
-      path: "/demo/wheel/index",
-      name: "wheel",
-      component: () => import("@/views/demo/wheel/index.vue"),
+      path: "/demo/screen1/index",
+      name: "screen1",
+      component: () => import("@/views/demo/screen1/index.vue"),
       meta: {
-        title: "天气轮盘"
+        title: "🐱‍👤🐱‍👤程序"
+      }
+    },
+    {
+      path: "/demo/screen2/index",
+      name: "screen2",
+      component: () => import("@/views/demo/screen2/index.vue"),
+      meta: {
+        title: "🎶🎶弹跳"
       }
     },
     {
@@ -39,7 +47,7 @@ export default {
       name: "mouseEffects",
       component: () => import("@/views/demo/mouseEffects/index.vue"),
       meta: {
-        title: "鼠标特效"
+        title: "🖱🖱特效1"
       }
     },
     {
